@@ -1,0 +1,6 @@
+.contenedor-titulo{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
