@@ -1,4 +1,6 @@
-# 
+library("tidyr")
+
+#
 # # Real 4 tarjetas (2 amarillas por equipo)
 # arbitro <- 5.413793103 # Sanchez Martinez
 # local <- 24/14 # Madrid
@@ -29,8 +31,9 @@
 #* @param visitante 
 #* @param arbitro 
 createDataModel <- function(local, visitante, arbitro) {
-  equipos = read.csv("Tarjetas España - Equipos.csv")
-  arbitros = read.csv("Tarjetas España - Arbitros.csv")
+  equipos = read.csv("predictor_tarjetas/football-cards-predictor/data/Tarjetas España - Equipos.csv")
+  arbitros = read.csv("predictor_tarjetas/football-cards-predictor/data/Tarjetas España - Arbitros.csv")
+  equipos <- equipos %>% drop_na()
   equipos$T.P <- as.double(gsub(",", "\\.", equipos$T.P))
   arbitros$T.P <- as.double(gsub(",", "\\.", arbitros$T.P))
   lambda_local <- equipos$T.P[equipos$Equipo == local]

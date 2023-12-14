@@ -3,8 +3,8 @@ import Selector from "./Selector";
 
 function Selectores( props ){
 
-    const equipos = ["Real Madrid", "FC Barcelona", "Athletic de Bilbao", "Valencia", "Atlético de Madrid", "Girona", "Rayo Vallecano", "Real Sociedad", "Real Betis", "Almería", "Espanyol", "Osasuna", "Villarreal", "Celta de Vigo", "Mallorca", "Sevilla", "Real Valladolid", "Getafe", "Elche", "Cádiz"];
-    const arbitros = ["Cuadra Fernández", "De Burgos Bengoetxea", "Cel Cerro Grande", "Díaz de Mera Escuderos", "Figueroa Vázquez", "Gil Manzano", "González Fuertes", "Hernández Hernández", "Ignacio Iglesias Villanueva", "Martínez Munuera", "Mateu Lahoz", "Melero López", "Munuera Montero", "Muñiz Ruiz", "Ortiz Arias", "Pizarro Gómez", "Pulido Santana", "Sánchez Martínez", "Soto Grado", "Alberola Rojas", "Cordero Vega"];
+    const equipos = ["Real Madrid", "FC Barcelona", "Athletic de Bilbao", "Valencia", "Atlético de Madrid", "Girona", "Rayo Vallecano", "Real Sociedad", "Real Betis", "Almería", "Las Palmas", "Osasuna", "Villarreal", "Celta de Vigo", "Mallorca", "Sevilla", "Granada", "Getafe", "Deportivo Alavés", "Cádiz"];
+    const arbitros = ["Alberola Rojas", "Cuadra Fernández", "Diaz de Mera Escuderos", "García Verdura", "Gil Manzano", "González Fuertes", "Hernández Maeso", "Munuera Montero", "Ortiz Arias", "Pulido Santana", "Sánchez Martínez", "Soto Grado", "De Burgos Bengoetxea", "Figueroa Vázquez", "Hernández Hernández", "Javier Iglesias Villanueva", "Martínez Munuera", "Muñiz Ruiz", "Busquets Ferrer", "Melero López"]
 
     const [local, setLocal] = useState(null);
     const [visitante, setVisitante] = useState(null);
